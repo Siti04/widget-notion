@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #7a7a7a
+    }
+
+
+    .email:hover {
+      color: #23c8c8;
+    }
+
+    .linkedin:hover {
+      color: #0e76a8;
+    }
+
+    .whatsapp:hover {
+      color: #26a7de;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="social">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End email Icon -->
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start whatsapp Icon -->
+      <div id="whatssap" onclick="navigate(this.id)" class="social">
+        <span class="icon whatsapp"><i class="fab fa-whatsapp"></i></span>
+      </div>
+      <!-- End whatsapp Icon -->
+
+
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "email")
+          window.open("mailto:sitiazahra2804@gmail.com", '_blank').focus(); //Add your email after "mailto:""
+
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/in/sitiazahra/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "whatsapp") {
+          window.open("https://wa.me/6285271890629/", '_blank').focus(); //Add the url to your pinterest account
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
